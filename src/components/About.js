@@ -1,24 +1,25 @@
-import { isLabelWithInternallyDisabledControl } from "@testing-library/user-event/dist/utils";
+// import { isLabelWithInternallyDisabledControl } from "@testing-library/user-event/dist/utils";
 import React, { useState } from "react";
 
 export default function About() {
   const [myStyle, setMyStyle] = useState({
-    color: "black",
+    color: "#064663",
     backgroundColor: "white",
   });
 
   const [btnText, setBtnText] = useState("Enable Dark Mode");
 
   const toggleStyle = ()=> {
-      if(myStyle.color == 'black'){
+      if(myStyle.color === '#064663'){
           setMyStyle ({
             color: "white",
-            backgroundColor: "black",
+            backgroundColor: "#064663",
+            border : "1px solid white",
           })
           setBtnText("Enable Light Mode")
       }else{
         setMyStyle ({
-            color: "black",
+            color: "#064663",
             backgroundColor: "white",
           }) 
           setBtnText("Enable Dark Mode");
