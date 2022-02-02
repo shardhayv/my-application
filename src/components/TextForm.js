@@ -36,8 +36,8 @@ export default function TextForm(props) {
           rows="8"
         ></textarea>
       </div >
-      <button className="btn btn-primary my-2" onClick={handleUpClick}>Convert to uppercase</button>
-      <button className="btn btn-primary my-2" onClick={handleLowClick}>Convert to Lowercase</button>
+      <button className="btn btn-primary m-2" onClick={handleUpClick}>Convert to uppercase</button>
+      <button className="btn btn-primary m-2" onClick={handleLowClick}>Convert to Lowercase</button>
     </div>
     <div className="container my-3">
         <h1>Your text summary</h1>
